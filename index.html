@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicios JavaScript</title>
+</head>
+<body>
+  <h1>Ejercicios con Clases en JavaScript</h1>
+
+  <h2>Ejercicio 6: Ficha de Ejercicios</h2>
+  <label for="nombre">Nombre de la persona:</label>
+  <input type="text" id="nombre">
+  <button onclick="crearFicha()">Crear Ficha</button>
+
+  <div id="registro" style="display: none; margin-top: 20px;">
+    <label for="kms">Kilómetros de la sesión:</label>
+    <input type="number" id="kms">
+    <button onclick="anotarKilometros()">Anotar</button>
+    <button onclick="mostrarMedia()">Mostrar Media</button>
+    <p id="info"></p>
+  </div>
+
+  <hr>
+
+  <h2>Ejercicio 7: Factura para Clientes</h2>
+  <button onclick="probarFacturas()">Probar Facturas</button>
+  <pre id="salida_ej7"></pre>
+
+  <hr>
+
+  <h2>Ejercicio 8: Artículo y Proveedor</h2>
+  <button onclick="probarArticulo()">Mostrar Información del Artículo</button>
+  <pre id="salida_ej8" style="margin-top: 20px;"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
