@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabajo Practico 5</title>
+</head>
+<body>
+  <h2>Ejercicio 5: Consumo de combustible por kilómetro</h2>
+  <button onclick="calcularConsumo()">Calcular Consumo</button>
+
+  <script>
+    // Ejercicio 5
+    function calcularConsumo() {
+      let litros = parseFloat(prompt("Ingrese los litros de nafta consumidos:"));
+      let kilometros = parseFloat(prompt("Ingrese los kilómetros recorridos:"));
+
+      if (isNaN(litros) || isNaN(kilometros) || kilometros === 0) {
+        alert("Por favor, ingresa valores válidos y asegúrate de que los kilómetros no sean cero.");
+        return;
+      }
+
+      let consumo = litros / kilometros;
+      alert("El consumo de combustible por kilómetro es: " + consumo.toFixed(2) + " litros/km");
+    }
+  </script>
+</body>
+</html>
