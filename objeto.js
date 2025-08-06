@@ -87,13 +87,17 @@ Estado: ${this.estado}`;
 function probarFacturas() {
   const factura1 = new Factura(0, 1200); // Cristian
   const factura2 = new Factura(1, 800);  // Carlos
-    factura1.cobrar();
-  factura2.cobrar(); 
+  const factura3 = new Factura(2, 1500); // Martina
+  factura1.cobrar();
+  factura2.cobrar();
+  factura3.cobrar(); 
 
   const resultado = [
     factura1.imprimir(),
     "",
-    factura2.imprimir()
+    factura2.imprimir(),
+    "",
+    factura3.imprimir() // Descomentar si se crea factura3  
   ].join("\n");
 
   document.getElementById("salida_ej7").textContent = resultado;
