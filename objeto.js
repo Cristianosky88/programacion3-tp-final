@@ -57,9 +57,9 @@ function mostrarMedia() {
 // Ejercicio 7: Factura para Clientes
 // =============================
 const clientes = [
-  { nombre: "Juan", email: "juan@mail.com", telefono: "1111-1111" },
-  { nombre: "Ana", email: "ana@mail.com", telefono: "2222-2222" },
-  { nombre: "Carlos", email: "carlos@mail.com", telefono: "3333-3333" }
+  { nombre: "Cristian", email: "cristian_2@mail.com", telefono: "4256304" },
+  { nombre: "Carlos", email: "Carlos_ska@mail.com", telefono: "387541235" },
+  { nombre: "Martina", email: "marutcha@mail.com", telefono: "3875412687" }
 ];
 
 class Factura {
@@ -85,9 +85,10 @@ Estado: ${this.estado}`;
 }
 
 function probarFacturas() {
-  const factura1 = new Factura(0, 1200); // Juan
-  const factura2 = new Factura(1, 800);  // Ana
-  factura1.cobrar();
+  const factura1 = new Factura(0, 1200); // Cristian
+  const factura2 = new Factura(1, 800);  // Carlos
+    factura1.cobrar();
+  factura2.cobrar(); 
 
   const resultado = [
     factura1.imprimir(),
